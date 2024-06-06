@@ -1,4 +1,12 @@
+import { Metadata } from 'next';
 import SideNav from '../ui/dashboard/sidenav';
+
+export const metadata: Metadata = {
+  title: {
+    template: 'Invoices | %s',
+    default: 'Invoices',
+  },
+};
 
 interface ILayout {
   children: React.ReactNode;
